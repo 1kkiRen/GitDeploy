@@ -16,10 +16,10 @@
 <section>
 	<Header />
 
-    <div style="height: 50vh; background-color: #1c2333;"></div>
+	<div style="height: 50vh; background-color: #1c2333;" />
 
-    <Home />
-    <About />
+	<Home />
+	<About />
 	<Skills />
 	<Projects />
 	<Contact />
