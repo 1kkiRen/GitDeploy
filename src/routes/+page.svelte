@@ -1,59 +1,28 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import About from './About.svelte';
+	import Home from './Home.svelte';
+	import Skills from './Skills.svelte';
+	import Projects from './Projects.svelte';
+	import Contact from './Contact.svelte';
+	import Social from './Social.svelte';
+	import Header from './Header.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Portfolio</title>
+	<meta name="description" content="Portfolio using SvelteKit" />
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+	<Header />
 
-		to your new<br />SvelteKit app
-	</h1>
+    <div style="height: 50vh; background-color: #1c2333;"></div>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+    <Home />
+    <About />
+	<Skills />
+	<Projects />
+	<Contact />
+	<Social />
 
-	<Counter />
 </section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
