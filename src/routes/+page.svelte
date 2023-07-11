@@ -24,5 +24,4 @@
 	<Projects />
 	<Contact />
 	<Social />
-
 </section>
