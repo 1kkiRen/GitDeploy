@@ -1,20 +1,10 @@
-<script>
-	import Content from "./Content.svelte";
+<script lang="ts">
+    import Content from "./Content.svelte";
     import Header from "./Header.svelte";
-</script>
+    import {onMount} from 'svelte';
+    import {formatDistanceToNow} from 'date-fns';
 
-
-<svelte:head> 
-    <title>API Worker</title>
-    <meta name="description" content="API Worker" />
-</svelte:head>
-
-<section>
-    <Header />
-    <Content />   
-    <script lang="ts">
-        import { formatDistanceToNow } from 'date-fns';
-
+    onMount(() => {
         const email = document.getElementById('email') as HTMLInputElement;
         const submit = document.getElementById('submit') as HTMLButtonElement;
                 
@@ -48,7 +38,7 @@
             month: number;
             day: number;
         }
-        
+
         interface ApiDataResponse {
             id: number;
         }
@@ -104,5 +94,20 @@
                 return false;
             }
         }
+        });
+
+</script>
+
+
+<svelte:head> 
+    <title>API Worker</title>
+    <meta name="description" content="API Worker" />
+</svelte:head>
+
+<section>
+    <Header />
+    <Content />   
+    <script lang="ts">
+        
     </script> 
 </section>

@@ -11,15 +11,15 @@
 
 <style>
     .requested-content {
-    width: 100%;
-    height: 100vh;
-    padding: 3.5rem 9rem;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #1c2333;
-    transition: all 1s ease-in-out;
+        width: 100%;
+        height: 100vh;
+        padding: 3.5rem 9rem;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #1c2333;
+        transition: all 1s ease-in-out;
     }
 
     .requested-content.show {
